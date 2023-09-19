@@ -1,0 +1,23 @@
+﻿<Page x:Class="LibraryProject.View.RegisterPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LibraryProject.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="200" d:DesignWidth="300" Background="Azure"
+      Title="RegisterPage">
+
+    <Grid>
+        <Label Content="Registration" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10,10,10,0"/>
+        <Label Content="UserName:" Margin="10,40,0,0"/>
+        <TextBox x:Name="UsernameTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="90,45,0,0" Width="200" ToolTip="UserName"/>
+        <Label Content="Email:" Margin="10,70,0,0"/>
+        <TextBox x:Name="EmailTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="90,75,0,0" Width="200"/>
+        <Label Content="Password:" Margin="10,100,0,0"/>
+        <PasswordBox x:Name="PasswordBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="90,105,0,0" Width="200" ToolTip="Password"/>
+        <Label Content="Librarian?" Margin="10,130,0,0"/>
+        <CheckBox x:Name="IsLibrarianCB"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="90,135,0,0"/>
+        <Button Content="Register" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="75" Margin="10" Click="Register_Click" />
+    </Grid>
+</Page>
