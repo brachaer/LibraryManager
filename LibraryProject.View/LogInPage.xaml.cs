@@ -15,9 +15,6 @@ namespace LibraryProject.View
         {
             InitializeComponent();
         }
-
-
-
         private void LoginClick(object sender, RoutedEventArgs e)
         {
             string userName = UsernameTextBox.Text;
@@ -35,7 +32,6 @@ namespace LibraryProject.View
                 NavigationService.Navigate(new LibraryPage(user));
             }
         }
-
         private void RegisterClick(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new RegisterPage());

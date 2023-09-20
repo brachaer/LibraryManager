@@ -8,7 +8,7 @@
       d:DesignHeight="350" d:DesignWidth="600"
       Title="LibraryPage">
     <Page.Background>
-        <ImageBrush ImageSource="/books - Copy.png" Stretch="UniformToFill" Opacity="0.8"/>
+        <ImageBrush ImageSource="/Images/LibraryBG.png" Stretch="Fill" Opacity="0.8"/>
     </Page.Background>
     <Grid>
         <Label x:Name="userName"  Content="Welcome" FontSize="25" FontWeight="Bold" Foreground="Bisque"  HorizontalAlignment="Center" VerticalAlignment="Top"/>
@@ -23,7 +23,6 @@
         <TextBox x:Name="TypeTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="230,70,0,0" />
         <Button x:Name="btnSearch"  FontWeight="Bold" Content="Search" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Margin="340,70,0,10" Click="Search_Click" />
         <Button x:Name="btnAdd" FontWeight="Bold" Content="Add Item" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="520,70,0,10" Click="AddItemClick" />
-        <!--<Button x:Name="btnBorrowed"  FontWeight="Bold" Content="Borrowed Items" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="410,70,0,10" Click="BorrowList_Click"  />-->
 
         <!-- Display Library Items -->
         <ListView Name="libraryListView" Margin="0,100,0,0" ItemsSource="{Binding ItemList}" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" SelectionChanged="SelectItem" Opacity="0.7" >

@@ -13,7 +13,6 @@ namespace LibraryProject.Data
 #else
         readonly LibraryDbContext data = new LibraryDbContext();
 #endif
-
         public static ItemsRepository Init { get; } = new ItemsRepository();
         private ItemsRepository() { }
 

@@ -56,35 +56,6 @@
     <Compile Include="ItemsRepository.cs" />
     <Compile Include="LibraryDbContext.cs" />
     <Compile Include="LibraryDbContextMock.cs" />
-    <Compile Include="Migrations\202308070843262_InitialCreate.cs" />
-    <Compile Include="Migrations\202308070843262_InitialCreate.designer.cs">
-      <DependentUpon>202308070843262_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202309131328317_first.cs" />
-    <Compile Include="Migrations\202309131328317_first.designer.cs">
-      <DependentUpon>202309131328317_first.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202309181041573_borrowlist.cs" />
-    <Compile Include="Migrations\202309181041573_borrowlist.designer.cs">
-      <DependentUpon>202309181041573_borrowlist.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202309181202307_second.cs" />
-    <Compile Include="Migrations\202309181202307_second.designer.cs">
-      <DependentUpon>202309181202307_second.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202309181447267_third.cs" />
-    <Compile Include="Migrations\202309181447267_third.designer.cs">
-      <DependentUpon>202309181447267_third.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202309191319461_fourth.cs" />
-    <Compile Include="Migrations\202309191319461_fourth.designer.cs">
-      <DependentUpon>202309191319461_fourth.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202309191336330_fifth.cs" />
-    <Compile Include="Migrations\202309191336330_fifth.designer.cs">
-      <DependentUpon>202309191336330_fifth.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UsersRepository.cs" />
   </ItemGroup>
@@ -97,29 +68,6 @@
       <Project>{A7CF7BFB-B2B2-4AE8-A306-20DD4CA1DEB9}</Project>
       <Name>LibraryProject.Models</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202308070843262_InitialCreate.resx">
-      <DependentUpon>202308070843262_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202309131328317_first.resx">
-      <DependentUpon>202309131328317_first.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202309181041573_borrowlist.resx">
-      <DependentUpon>202309181041573_borrowlist.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202309181202307_second.resx">
-      <DependentUpon>202309181202307_second.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202309181447267_third.resx">
-      <DependentUpon>202309181447267_third.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202309191319461_fourth.resx">
-      <DependentUpon>202309191319461_fourth.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202309191336330_fifth.resx">
-      <DependentUpon>202309191336330_fifth.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -3,7 +3,6 @@ using LibraryProject.Models.Enums;
 using LibraryProject.Services;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Navigation;
@@ -91,21 +90,7 @@ namespace LibraryProject.View
             var items = ItemService.SearchItems(searchParam, search);
             if (items != null && searchParam != SearchParams.Other)
                 items.ForEach(i => libraryListView.Items.Add(i));
-            MessageBox.Show("search");
         }
-
-        //private void BorrowList_Click(object sender, RoutedEventArgs e)
-        //{
-        //    if (User.BorrowedItems.Count > 0)
-        //    {
-        //        StringBuilder sb = new StringBuilder($"{User.Name} Borrowed Items: \n");
-        //        User.BorrowedItems.ForEach(i => sb.Append($"{i.ItemName} \n"));
-        //        MessageBox.Show(sb.ToString());
-        //    }
-        //    else
-        //        MessageBox.Show("No Borrowed Items");
-        //}
-
         private void LogOut_Click(object sender, RoutedEventArgs e)
         {
             User = null;

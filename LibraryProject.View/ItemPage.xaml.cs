@@ -21,7 +21,6 @@ namespace LibraryProject.View
             User = user;
             SetItemPage();
         }
-
         private void SetItemPage()
         {
             ItemNameTextBlock.Text = Item.ItemName;
@@ -42,17 +41,14 @@ namespace LibraryProject.View
                 btnDelete.Visibility = Visibility.Collapsed;
             }
         }
-
         private void BacktoLibrary_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new LibraryPage(User));
         }
-
         private void Edit_BtnClick(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new EditPage(User,Item));   
         }
-
         private void Delete_Click(object sender, RoutedEventArgs e)
         {
             if (Item == null)
@@ -64,16 +60,13 @@ namespace LibraryProject.View
                     ItemService.RemoveItem(Item.Id);
                     MessageBox.Show($"{Item.Type}: {Item.ItemName} DELETED from Library");
                     NavigationService.Navigate(new LibraryPage(User));
-
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
                 }   
             }
-
         }
-
         private void Borrow_Click(object sender, RoutedEventArgs e)
         {
             if (Item == null)
@@ -92,7 +85,6 @@ namespace LibraryProject.View
                 }
             }
         }
-
         private void Return_Click(object sender, RoutedEventArgs e)
         {
             try

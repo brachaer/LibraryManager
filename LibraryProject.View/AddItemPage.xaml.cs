@@ -22,7 +22,6 @@ namespace LibraryProject.View
             User = user;
             UpdateCategories();
         }
-
         private void UpdateCategories()
         {
             foreach (Category category in Enum.GetValues(typeof(Category)))
@@ -30,54 +29,7 @@ namespace LibraryProject.View
                 CategoryComboBox.Items.Add(category.ToString());
             }
         }
-        //private void AddItemButton_Click(object sender, RoutedEventArgs e)
-        //{ 
-        //    // Collect data from UI elements
-        //    string itemName = ItemNameTextBox.Text;
-        //    ValidationService.ValidateString(itemName);
-        //    DateTime? printDate = PrintDatePicker.SelectedDate;
-        //    string bookPublishing = BookPublishingTextBox.Text;
-        //    ValidationService.ValidateString(bookPublishing);
-        //    // Parse Price (assuming user enters a valid integer)
-        //    int price;
-        //    if (int.TryParse(PriceTextBox.Text, out price))
-        //    {
-        //        Item item;
-        //        if (BookRadioButton.IsChecked == true)
-        //        {
-        //            item = new Book
-        //            {
-        //                ItemName = itemName,
-        //                PrintDate = printDate,
-        //                BookPublishing = bookPublishing,
-        //                Price = price,
-        //                Category = (Category)CategoryComboBox.SelectedItem,
-        //                Author = AuthorTextBox.Text,
-        //            };
-        //        }
-        //        else
-        //        {
-        //            item = new Journal
-        //            {
-        //                ItemName = itemName,
-        //                PrintDate = printDate,
-        //                BookPublishing = bookPublishing,
-        //                Price = price,
-        //                Category = (Category)CategoryComboBox.SelectedIndex,
-        //                Author = AuthorTextBox.Text,
-        //                IssueNumber = int.Parse(IssueTextBox.Text)
-        //            };
-        //        }
-        //        ItemService.AddItem(item);
-        //        NavigationService.Navigate(new LibraryPage(User));
-        //    }
-        //    else
-        //    {
-        //        // Handle invalid price input
-        //        MessageBox.Show("Invalid price entered.");
-        //    }
-        //}
-
+        
         private void AddItemButton_Click(object sender, RoutedEventArgs e)
         {
             // Collect data from UI elements
@@ -118,7 +70,6 @@ namespace LibraryProject.View
 
             return true;
         }
-
         private bool TryParsePrice(string priceText, out int price)
         {
             if (!int.TryParse(priceText, out price))
@@ -129,7 +80,6 @@ namespace LibraryProject.View
 
             return true;
         }
-
         private bool TryParseIssueNumber(string issueNumberText, out int issueNumber)
         {
             if (!int.TryParse(issueNumberText, out issueNumber))
@@ -153,9 +103,6 @@ namespace LibraryProject.View
                 };
                 return book;
             }
-
-        
-
         private Journal CreateJournal(string itemName, DateTime? printDate, string bookPublishing, int price, int issueNumber)
         {
             return new Journal
@@ -169,13 +116,11 @@ namespace LibraryProject.View
                 IssueNumber = issueNumber,
             };
         }
-
         private void BookType_Checked(object sender, RoutedEventArgs e)
         {
             IssueTextBox.Visibility = Visibility.Collapsed;
             IssueTB.Visibility = Visibility.Collapsed;
         }
-
         private void JournalType_Checked(object sender, RoutedEventArgs e)
         {
             IssueTB.Visibility = Visibility.Visible;

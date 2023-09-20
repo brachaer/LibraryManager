@@ -14,7 +14,6 @@ namespace LibraryProject.Data
 #else
         readonly LibraryDbContext data = new LibraryDbContext();
 #endif
-
 		public static UsersRepository Init { get; } = new UsersRepository();
 		private UsersRepository() { }
 

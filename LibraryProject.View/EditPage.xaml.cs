@@ -52,7 +52,6 @@ namespace LibraryProject.View
                 JournalRadioButton.IsChecked = false;
             }
         }
-
         private void Edit_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -90,7 +89,6 @@ namespace LibraryProject.View
                 NavigationService.Navigate(new LibraryPage(User));
             }
         }
-
         private void BookType_Checked(object sender, RoutedEventArgs e)
         {
             IssueTextBox.Visibility= Visibility.Collapsed;

@@ -164,15 +164,6 @@
   <ItemGroup>
     <Resource Include="Images\LibraryBG.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\BGLibrary.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="BGLibrary.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="books - Copy.png" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

@@ -9,7 +9,6 @@ namespace LibraryProject.Services
         public static ValidationService Init { get; } = new ValidationService();
         public ValidationService() { }
      
-        public bool ValidateStringToInt(string num) => int.TryParse(num, out int OutNum);
         public bool ValidateString(string s)
         {
             if (ValidateStringLength(s) && ValidateNoNumbers(s))

@@ -53,7 +53,6 @@ namespace LibraryProject.Services
                 data.DeleteItem(item.Id);
             
         }
-
         public void BorrowItem(Item item, User user)
         {
             if (item == null)
@@ -68,7 +67,6 @@ namespace LibraryProject.Services
                 EditItem(item);
             }
         }
-
         public void ReturnItem(Item  item, User user)
         {
             if (item == null)
@@ -84,7 +82,6 @@ namespace LibraryProject.Services
                 EditItem(item);
             }
         }
-
         public List<Item> SearchItems(SearchParams param, string search)
         {
             var items = GetItems().ToList<Item>();

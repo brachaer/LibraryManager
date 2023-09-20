@@ -44,8 +44,6 @@ namespace LibraryProject.Services
 				throw new ArgumentNullException(nameof(user), "User cannot be null");	
 			data.UpdateUser(user);
 		}
-
-		
 		public User LogIn(string name, string password)
 		{
 			var users = GetUsers().ToList<User>();
@@ -57,6 +55,5 @@ namespace LibraryProject.Services
 				return null;
 			return user;
 		}
-
 	}
 }
