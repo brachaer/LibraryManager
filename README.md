@@ -1,10 +1,11 @@
 # Library Manager
 ## Library Manager Created using C#, WPF, SQL
 
-The Library Manager is a software system that helps manage a library's operations efficiently.
-The Library System is a comprehensive software solution designed to help libraries manage their operations efficiently.
-The system includes features such as book catalog management, borrowing management, member management, reporting, and system administration. 
-The system is designed to be easy to use and accessible to librarians, library staff, and administrators.
+Designed and implemented a Library Manager application using C# and the Windows Presentation Foundation (WPF) framework. 
+The project included database integration with SQL, allowing for efficient management of library resources. 
+Employed Object-Oriented Programming (OOP) principles for robust software design.
+
+Skills Demonstrated: C# programming, WPF development, SQL database management, software architecture, OOP.
 
 **April 2023**
 
